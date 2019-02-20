@@ -41,5 +41,5 @@ class Monster(Character):
     def __init__(self):
         pass
     
-    def greet(self):
+    def greet(self, someone=None):
         return "uggggghhhh"
