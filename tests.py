@@ -42,4 +42,4 @@ bronn = Hero("Bronn of the Blackwater", "bronn.png")
 walker = Monster()
 
 # Expect Monster to make monster sound
-print(walker.greet())
+print(walker.greet(jon))
