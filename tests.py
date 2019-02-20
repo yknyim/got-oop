@@ -43,3 +43,7 @@ walker = Monster()
 
 # Expect Monster to make monster sound
 print(walker.greet(jon))
+
+# Expect jon to say "EEEEEEEEEK"
+# when encountering a monster
+print(jon.greet(walker))
