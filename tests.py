@@ -24,21 +24,22 @@ print(len(arya.inventory))
 # arya should have a `greet` method
 # and when I call with `arya.greet(jon)`, it should return
 # "Hello, Jon Snow, I am Ayra Stark. I am awesome."
-print(arya.greet(jon))
+# print(arya.greet(jon))
 
 # arya should have a `greet` method
 # and when I call with `arya.greet()`, it should return
 # "Hello, I am Ayra Stark. I am awesome."
-print(arya.greet())
+# print(arya.greet())
 
 # I should be able to create a hero instance
 bronn = Hero("Bronn of the Blackwater", "bronn.png")
 
 # Hero should be able to greet Character
-print(bronn.greet(arya))
-print(jon.greet(bronn))
+# print(bronn.greet(arya))
+# print(jon.greet(bronn))
 
 # I should be able to create a monster instance
-walker = Monster("Night King of the White Walkers", "walker.png")
+walker = Monster()
 
-print(walker.greet(jon))
+# Expect Monster to make monster sound
+print(walker.greet())
