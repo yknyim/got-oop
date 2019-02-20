@@ -26,13 +26,6 @@ class Character():
         else:
             return "Hello, I am %s. I am awesome." % (self.name,)
 
-# Hero is a kind of Character
-# Hero is a subclass of character
-# Hero inherits from Character
-# Character is the super class of Hero
-class Hero(Character):
-    pass
-    
 # Monster is a kind of Character
 # Monster is a subclass of character
 # Monster inherits from Character
@@ -40,6 +33,18 @@ class Hero(Character):
 class Monster(Character):
     def __init__(self):
         pass
+        # self.name = "EEEEEKKKK!"
     
     def greet(self, someone=None):
         return "uggggghhhh"
+
+# Hero is a kind of Character
+# Hero is a subclass of character
+# Hero inherits from Character
+# Character is the super class of Hero
+class Hero(Character):
+    def greet(self, someone=None):
+        if type(someone) == Monster:
+            return "EEEEEEEEEEKK!"
+        else:
+            return super().greet(someone)
