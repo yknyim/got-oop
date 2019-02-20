@@ -9,3 +9,11 @@ jon = Character("Jon Snow", "jon.png")
 
 print(arya.name, arya.avatar)
 print(jon.name, jon.avatar)
+
+# After adding 2 items to inventory
+# length of inventory should == 2
+
+arya.inventory.append('needle')
+arya.inventory.append('mask')
+
+print(len(arya.inventory))
